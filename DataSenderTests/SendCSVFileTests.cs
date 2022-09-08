@@ -1,10 +1,10 @@
-using System;
+using DataSender;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Xunit;
 
-namespace DataSender.Tests
+namespace DataSenderTests
 {
     public class SendCSVFileTests
     {

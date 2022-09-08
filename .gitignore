@@ -9,3 +9,5 @@
 /Sender1/obj
 /.vs/StreamLine
 /TestResults
+/DataSenderTests/bin/Debug/netcoreapp3.1
+/DataSenderTests/obj
