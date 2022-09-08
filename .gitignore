@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DataSender/bin/Debug/netcoreapp3.1
+/DataSender/obj
+/Sender.Tests/bin/Debug/netcoreapp3.1
+/Sender.Tests/obj
+/Sender1/obj
+/.vs/StreamLine
+/TestResults
