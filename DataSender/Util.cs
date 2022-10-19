@@ -7,7 +7,7 @@ namespace DataSender
     {
         public static string ConvertListToJSON(dynamic input)
         {
-			Console.WriteLine("printing battery status >>>")
+			Console.WriteLine("printing battery status >>>");
             return JsonSerializer.Serialize(input);
         }
     }
