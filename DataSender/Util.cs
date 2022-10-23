@@ -5,10 +5,8 @@ namespace DataSender
 {
     public static class Util
     {
-        public static string ConvertListToJSON(dynamic input)
+        public static string ConvertListToJSON(dynamic input) { 
         
-			string data= JsonSerializer.Serialize(input);
-			Console.WriteLine("printing battery status >>>" data);
             return JsonSerializer.Serialize(input);
         }
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
+using System.Text.Json;
 
 namespace DataSender
 {
@@ -10,7 +11,7 @@ namespace DataSender
         {
             var class1 = new CSVDataProcessor("SensorReading.csv");
             var sensorReadings = class1.ProcessData();
-            Console.WriteLine(Util.ConvertListToJSON(sensorReadings));
+            Console.WriteLine(JsonSerializer.Serialize(sensorReadings));
         }
     }
 }
