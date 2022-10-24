@@ -8,12 +8,12 @@ public class Battery {
     private float temperature;
 
     @SerializedName(value = "StateOfCharge")
-    private float StateOfCharge;
+    private float stateOfCharge;
 
     public Battery(float temperature, float stateOfCharge) {
         super();
         this.temperature = temperature;
-        StateOfCharge = stateOfCharge;
+        stateOfCharge = stateOfCharge;
     }
 
     public float getTemperature() {
@@ -25,16 +25,16 @@ public class Battery {
     }
 
     public float getStateOfCharge() {
-        return StateOfCharge;
+        return stateOfCharge;
     }
 
     public void setStateOfCharge(float stateOfCharge) {
-        StateOfCharge = stateOfCharge;
+        stateOfCharge = stateOfCharge;
     }
 
     @Override
     public String toString() {
-        return "Battery [temperature=" + temperature + ", StateOfCharge=" + StateOfCharge + "]";
+        return "Battery [temperature=" + temperature + ", StateOfCharge=" + stateOfCharge + "]";
     }
 
 }
