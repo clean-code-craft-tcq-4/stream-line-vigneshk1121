@@ -22,7 +22,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build and Test
+    - name: Build Receiver
       run: |
         cd DataReceiver
         mvn package
+    - name: run Sender Receiver 
+      run: dotnet run --project .\DataSender\DataSender.csproj | java -jar .\DataReceiver\target\rcv-0.0.1-SNAPSHOT.jar
