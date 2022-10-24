@@ -31,4 +31,6 @@ jobs:
         restore-keys: ${{ runner.os }}-m2  
     
     - name: Build and test project with Maven
-      run: mvn -B package --file .\DataReceiver\pom.xml        
+      run: |
+        cd DataReceiver
+        mvn -B package --file pom.xml        
