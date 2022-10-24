@@ -14,7 +14,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  
 
     steps:
     - uses: actions/checkout@v2
@@ -34,11 +34,3 @@ jobs:
       run: |
         cd DataReceiver
         mvn -B package --file pom.xml 
-        ls
-        cd target
-        ls
-    - run: mkdir staging && cp "target/"*.jar staging
-    - uses: actions/upload-artifact@v1
-      with:
-        name: Package
-        path: staging        
