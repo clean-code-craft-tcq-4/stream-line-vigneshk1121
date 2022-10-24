@@ -13,7 +13,7 @@ import com.google.gson.reflect.TypeToken;
 import rcv.models.Battery;
 
 public class ReaderUtils {
-    public static List<Float> getBatterySocList(ArrayList<Battery> batteries) {
+    public static List<Float> getBatterySocList(List<Battery> batteries) {
         List<Float> batterySoc = new ArrayList<Float>();
         for (Battery battery : batteries) {
             batterySoc.add(battery.getStateOfCharge());
@@ -22,7 +22,7 @@ public class ReaderUtils {
         return batterySoc;
     }
 
-    public static List<Float> getBatteryTempList(ArrayList<Battery> batteries) {
+    public static List<Float> getBatteryTempList(List<Battery> batteries) {
         List<Float> batteryTemperatures = new ArrayList<Float>();
         for (Battery battery : batteries) {
             batteryTemperatures.add(battery.getTemperature());
@@ -31,7 +31,7 @@ public class ReaderUtils {
         return batteryTemperatures;
     }
 
-    public static ArrayList<Battery> getBatteryData() {
+    public static List<Battery> getBatteryData() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String jsonData = "";
         try {

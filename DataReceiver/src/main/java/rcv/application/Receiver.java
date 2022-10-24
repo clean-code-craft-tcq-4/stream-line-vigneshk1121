@@ -1,6 +1,5 @@
 package rcv.application;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -12,7 +11,7 @@ public class Receiver {
 
     public static void main(String[] args) {
 
-        ArrayList<Battery> batteries = ReaderUtils.getBatteryData();
+        List<Battery> batteries = ReaderUtils.getBatteryData();
 
         List<Float> batteryTemperatures = ReaderUtils.getBatteryTempList(batteries);
         List<Float> batterySoc = ReaderUtils.getBatterySocList(batteries);

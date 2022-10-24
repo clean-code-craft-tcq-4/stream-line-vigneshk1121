@@ -13,7 +13,7 @@ public class Battery {
     public Battery(float temperature, float stateOfCharge) {
         super();
         this.temperature = temperature;
-        stateOfCharge = stateOfCharge;
+        this.stateOfCharge = stateOfCharge;
     }
 
     public float getTemperature() {
