@@ -27,7 +27,9 @@ jobs:
         
     # Run the app
     - name: Run the App
-      run: dotnet run -p DataSender.csproj
+      run: |
+      cd DataSender
+      dotnet run -p DataSender.csproj
 
     - name: Run tests and collect coverage
       run: dotnet test --collect:"XPlat Code Coverage"
