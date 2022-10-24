@@ -27,4 +27,4 @@ jobs:
         cd DataReceiver
         mvn package
     - name: run Sender Receiver 
-      run: dotnet run --project .\DataSender\DataSender.csproj | java -jar .\DataReceiver\target\rcv-0.0.1-SNAPSHOT.jar
+      run: dotnet run --project .\DataSender\DataSender.csproj | java -jar .\target\rcv-0.0.1-SNAPSHOT.jar
